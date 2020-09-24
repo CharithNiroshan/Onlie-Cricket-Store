@@ -1,0 +1,514 @@
+*
+{
+    margin:0px;
+}
+a
+{
+    text-decoration:none;
+}
+
+
+/* Header Styles */
+header
+{
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    z-index: 2000;
+    height: 70px;
+    background-color:rgb(180, 175, 175);
+    align-items:center;
+    justify-content:space-between;
+    display:flex;
+}
+.logo
+{
+    margin-left:40px;
+    display:flex;
+    align-items:center;
+}
+.logo h1
+{
+    margin-left:40px;
+    font-size:30px;
+}
+#header-links
+{
+    display:flex;
+    list-style:none;
+    margin-right:30px;
+}
+#header-links li
+{
+    padding:0px 20px;
+    font-size:16px;
+    font-weight:bolder;
+}
+#header-links li a
+{
+    color:black;
+    text-transform:uppercase;
+    cursor: pointer;
+}
+#header-links li a:hover
+{
+    border-bottom:2px solid black;
+}
+
+
+/*Image slideshow*/
+.slidecontainer
+{
+    width:100%;
+    height: 400px;
+    margin-top: 70px;
+    overflow-x: hidden;
+}
+.imageslider::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+}
+.imageslider
+{
+    width:800%;
+    height:100%;
+    display: flex;
+    animation: slide 20s infinite ease-in-out;
+}
+.slide
+{
+    width: 12.5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.slide h1
+{
+    color: white;
+    z-index: 1000;
+}
+#slide1
+{
+    background-image: url("backgroundimages//accessories.jpg");
+}
+#slide2
+{
+    background-image: url("backgroundimages//bats.jpg");
+}
+#slide3
+{
+    background-image: url("backgroundimages//balls.jpg");
+}
+#slide4
+{
+    background-image: url("backgroundimages//bats.jpeg");
+}
+#slide5
+{
+    background-image: url("backgroundimages//pads.jpg");
+}
+#slide6
+{
+    background-image: url("backgroundimages//helmets.jpeg");
+}
+
+
+/*Product Details*/
+.productsdetails,.aboutus,.brands
+{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.productsdetails h1,.aboutus h1,.brands h1
+{
+    width: 90%;
+    margin: 0px auto 30px auto;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+.products
+{
+    width:90%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.product
+{
+    width:200px;
+    height: 150px;
+    margin: auto 20px;
+    display: flex;
+    border:2px solid black;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+}
+.product::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+}
+.product img
+{
+    width: 100%;
+    border-radius: 100%;
+}
+
+
+/* About us styles */
+.aboutus h1
+{
+    padding-top: 50px;
+}
+.aboutus p
+{
+    width:90%;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+.aboutus .container
+{
+    color: rgb(22, 22, 136);
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Brands styles */
+.brandcontainer
+{
+    width: 90%;
+    margin:0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1.5fr 1fr 1fr;
+}
+.brand
+{
+    display: flex;
+    color: white;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-items: space-around;
+}
+.brand::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+}
+.brand h2
+{
+    display: flex;
+    z-index: 1000;
+    font-size: 35px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:60px;
+}
+.brand p
+{
+    z-index: 1000;
+    font-size: 20px;
+    font-weight: bold;
+    padding:20px 30px 50px 30px;
+}
+#brand1
+{
+    background-image: url("backgroundimages//graynicholls.jpg");
+    grid-row: 1/3;
+}
+#brand2
+{
+    background-image: url("backgroundimages//gm.jpeg"); 
+}
+#brand3
+{
+    background-image: url("backgroundimages//ss.jpeg"); 
+}
+#brand4
+{
+    background-image: url("backgroundimages//kokobura.jpg"); 
+    grid-column: 2/4;
+}
+
+
+/* Footer Styles */
+footer
+{
+    background-color: rgb(180, 175, 175);
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#coloumn
+{
+    width:30%;
+    padding: 20px;
+}
+.header
+{
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.contactinfo .content
+{
+    margin: 40px 0px;
+    display: grid;
+    grid-gap: 30px;
+    font-size: 13px;
+}
+#socialmedia
+{
+    display: flex;
+    padding-left: 20px;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 40px;
+}
+#socialmedia li
+{
+    padding: 0px 20px;   
+    display: inline;
+}
+#socialmedia img
+{
+    align-items: center;
+    margin-top: 5px;
+} 
+.contactform form
+{
+    margin-top: 40px;
+    display: grid;
+    grid-gap: 20px;
+}
+.contactform form input
+{
+    font-size: 14px;
+}
+.contactform form button
+{
+    background-color: green;
+    width: 100px;
+    margin: 0 auto;
+    padding: 5px;
+    border: none;
+    color: white;
+}
+
+
+/*Copyrigth styles*/
+.copyright
+{
+    background-color: rgba(0, 0, 0, 0.911);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+
+/*Other Styles*/
+.loginform,.signupform,.message
+{
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:0;
+}
+.loginform::after,.signupform::after,.message::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+}
+#form
+{
+    width:380px;
+    color:black;
+    z-index: 2000;
+    background-color:#eee;
+}
+#login
+{
+    visibility: hidden;
+}
+#signup
+{
+    visibility: hidden;
+}
+#message
+{
+    visibility: hidden;
+}
+#form h1
+{
+    text-align:center;
+    padding: 20px 0px 20px 0px;
+    font-size:25px;
+    background-color: rgb(247, 247, 162);
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+#form label,input,select
+{
+    width:320px;
+    margin:10px 20px;
+    font-size: 18px;
+    padding: 5px;
+}
+#form button
+{
+    width:40%;
+    margin:10px 30% 0px 30%;
+    background-color: green;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+}
+#notmember
+{
+    text-align: center;
+    margin:10px auto 30px auto;
+}
+#notmember a
+{
+    color: blue;
+    cursor: pointer;
+}
+.messagecontainer
+{
+    width: 350px;
+    background-color: white;
+    text-align: center;
+    z-index: 100;
+}
+.messagecontainer h1
+{
+    padding: 10px;
+    font-size: 25px;
+    border-bottom: 2px solid black;
+}
+.messagecontainer p
+{
+    font-size: 25px;
+    padding: 15px;
+    margin: 10px;
+}
+.messagecontainer button
+{
+    width: 100px;
+    font-size: 18px;
+    background-color: green;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: none;  
+}
+#ok
+{
+    cursor: pointer;
+}
+@keyframes slide
+{
+    0%
+    {
+        transform: translateX(-12.5%);
+    }
+    14%
+    {
+        transform: translateX(-12.5%);
+    }
+    16.66%
+    {
+        transform: translateX(-25%);
+    }
+    30.66%
+    {
+        transform: translateX(-25%);
+    }
+    33.22%
+    {
+        transform: translateX(-37.5%);
+    }
+    47.22%
+    {
+        transform: translateX(-37.5%);
+    }
+    50%
+    {
+        transform: translateX(-50%);
+    }
+    64%
+    {
+        transform: translateX(-50%);
+    }
+    66.66%
+    {
+        transform: translateX(-62.5%);
+    }
+    80.66%
+    {
+        transform: translateX(-62.5%);
+    }
+    83.32%
+    {
+        transform: translateX(-75%);
+    }
+    97.32%
+    {
+        transform: translateX(-75%);
+    }
+    99.9999%
+    {
+        transform: translateX(-100%);
+    }
+    100%
+    {
+        transform: translateX(-12.5%);
+    }
+}
